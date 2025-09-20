@@ -1,0 +1,50 @@
+name: news
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ui / Design
+  cupertino_icons: ^1.0.8
+  lottie: ^3.3.2
+  flutter_screenutil: ^5.9.3
+  google_fonts: ^6.3.1
+
+  #State Mangment
+  flutter_bloc: ^9.1.1
+
+  # Networking / Backend
+  supabase_flutter: ^2.10.1
+  http: ^1.5.0
+
+  # Utilities
+  url_launcher: ^6.3.2
+  intl: ^0.20.2
+
+  # Build Tools
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/news_animation.json
+    - assets/news_logo.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/news_logo.png"
+  min_sdk_android: 21
