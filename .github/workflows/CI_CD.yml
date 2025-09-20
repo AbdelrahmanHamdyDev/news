@@ -31,10 +31,7 @@ jobs:
         run: flutter pub run flutter_launcher_icons
 
       - name: Build APK
-        run: flutter build apk --release \
-          --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} \
-          --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} \
-          --dart-define=SUPABASE_FUNCTIONS_URL=${{ secrets.SUPABASE_FUNCTIONS_URL }}
+        run: flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} --dart-define=SUPABASE_FUNCTIONS_URL=${{ secrets.SUPABASE_FUNCTIONS_URL }}
 
       - name: Get latest tag
         id: get_tag

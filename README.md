@@ -9,7 +9,7 @@ The app fetches the latest news securely using **Supabase Edge Functions** as a 
 
 <pre>
 
-<img src="screenshots/light_auth.jpg" width="30%"> <img src="screenshots/dark_auth.jpg" width="30%">     <img src="screenshots/light_home.jpg" width="30%"> <img src="screenshots/dark_home.jpg" width="30%">     <img src="screenshots/light_search.jpg" width="30%"> <img src="screenshots/dark_search.jpg" width="30%">     <img src="screenshots/light_cat.jpg" width="30%"> <img src="screenshots/dark_cat.jpg" width="30%">      <img src="screenshots/light_details.jpg" width="30%"> <img src="screenshots/dark_details.jpg" width="30%">
+<img src="screenshots/light_auth.jpg" width="30%">  <img src="screenshots/dark_auth.jpg" width="30%">     <img src="screenshots/light_home.jpg" width="30%">  <img src="screenshots/dark_home.jpg" width="30%">     <img src="screenshots/light_search.jpg" width="30%">  <img src="screenshots/dark_search.jpg" width="30%">     <img src="screenshots/light_cat.jpg" width="30%">  <img src="screenshots/dark_cat.jpg" width="30%">      <img src="screenshots/light_details.jpg" width="30%">  <img src="screenshots/dark_details.jpg" width="30%">
 
 </pre>
 
@@ -117,12 +117,12 @@ lib/
 3. Run the app with the defines
 
 - On Linux / macOS:
+
   ```bash
-  flutter run \
-   --dart-define=SUPABASE_URL=$Your_SUPABASE_URL \
-   --dart-define=SUPABASE_ANON_KEY=$Your_SUPABASE_ANON_KEY \
-   --dart-define=SUPABASE_FUNCTIONS_URL=$Your_SUPABASE_FUNCTIONS_URL
+  flutter build apk --release --dart-define=SUPABASE_URL=${{ your_SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ your_SUPABASE_ANON_KEY }} --dart-define=SUPABASE_FUNCTIONS_URL=${{ your_SUPABASE_FUNCTIONS_URL }}
+
   ```
+
 - on Windows (PowerShell):
   ```bash
   flutter build apk --release --dart-define=SUPABASE_URL=your_SUPABASE_URL --dart-define=SUPABASE_ANON_KEY=your_SUPABASE_ANON_KEY --dart-define=SUPABASE_FUNCTIONS_URL=your_SUPABASE_FUNCTIONS_URL
