@@ -26,7 +26,10 @@ To keep the key secure:
 This also made it possible to:
 
 - **Add authentication** (login/register with Supabase Auth).
-- Restrict some actions (like search) to logged-in users only.
+- Restrict some actions to logged-in users only.
+
+### Note:
+Email verification is turned off, so you can login/Register immediately without confirming via email (unreal emails are also accepted).
 
 ---
 
@@ -53,6 +56,8 @@ This also made it possible to:
 - **Date formatting** with 12h clock and readable format.
 - **Responsive UI** using `flutter_screenutil`.
 - **Minimal clean UI** for better user experience.
+- **Custom App Icon** branded launcher icon generated with `flutter_launcher_icons`.
+- **Custom Loading Animation** smooth animated loader (`Lottie`) while fetching data.
 
 ---
 
@@ -110,6 +115,7 @@ lib/
 2. Install dependencies
 
    ```bash
+   flutter create .
    flutter pub get
    flutter pub run flutter_launcher_icons
    ```
